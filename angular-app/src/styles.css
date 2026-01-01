@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+.my-primary{
+ background-color: white;
+ color: purple;
+ border: 1px solid purple;   
+}

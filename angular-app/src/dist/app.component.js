@@ -11,6 +11,7 @@ var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var employee_page_component_1 = require("./pages/employee-page/employee-page.component");
 var about_page_component_1 = require("./pages/about-page/about-page.component");
+var data_binding_component_1 = require("./pages/data-binding/data-binding.component");
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.title = 'angular-app';
@@ -18,7 +19,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'app-root',
-            imports: [router_1.RouterOutlet, employee_page_component_1.EmployeePageComponent, about_page_component_1.AboutPageComponent],
+            imports: [router_1.RouterOutlet, employee_page_component_1.EmployeePageComponent, about_page_component_1.AboutPageComponent, data_binding_component_1.DataBindingComponent],
             templateUrl: './app.component.html',
             styleUrl: './app.component.css'
         })
