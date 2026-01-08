@@ -8,16 +8,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 exports.DataBindingComponent = void 0;
 var core_1 = require("@angular/core");
+var forms_1 = require("@angular/forms");
 var DataBindingComponent = /** @class */ (function () {
     function DataBindingComponent() {
         this.courseName = "Angular";
         this.inputType = "radio";
-        this.myClass = "bg-primary";
+        this.myClass = "bg-success text-white";
+        this.imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPpAh63HncAuJOC6TxWkGLYpS0WwNXswz9MA&s";
+        this.name = "Farrukh";
     }
+    DataBindingComponent.prototype.sayHello = function (name) {
+        alert("Hello " + name);
+    };
+    DataBindingComponent.prototype.changeCourseName = function (my_course) {
+        this.courseName = my_course;
+    };
     DataBindingComponent = __decorate([
         core_1.Component({
             selector: 'app-data-binding',
-            imports: [],
+            imports: [forms_1.FormsModule],
             templateUrl: './data-binding.component.html',
             styleUrl: './data-binding.component.css'
         })
